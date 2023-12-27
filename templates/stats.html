@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %} Главная {% endblock %}
+
+{% block content %}
+    Прошли опрос: {{respondents_number}}<br>
+	Возраст: от {{min_age}} до {{max_age}}, средний — {{mean_age}}<br>
+	<img src={{ url}} alt="Chart">
+{% endblock %}
